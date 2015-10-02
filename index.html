@@ -11,6 +11,7 @@ Website by MrMatthewE
 <br/>
     <a href="404.html">Check Out a 404 error!</a>
     <br/>
+    
 This is a website hosted on Github.<br/>
     
 </font>
@@ -40,23 +41,29 @@ document.write('Welcome to this website ' + userName);
 
 </font>
 <br/>
-    <font face="Calibri" color="26B7FF">
+    <font  face="Calibri" color="26B7FF">
     JS-Colour Demo
     <br/>
     <script type="text/javascript" src="JS-Colour/jscolor.js"></script>
-    Choose Colour: <input class="color" value="66ff00"
-                          </font>
+        
+    Choose Colour: <input class="color" onchange=document.getElementsByTagName('body')[0].style.backgroundcolor = '#'+this.color>
+                         
+    </font>
         <br/>
         
-        <font face="Calibri" color=this.color>
-            Hello
-        </font>
+        <div id="Hello">
+    Hello
+    
+    </div>
         <br/>
         The above colour picker is called JS-Color.
         <br/>
         <img src="Images/Telescope.png" alt="Telescope">
         <br/>
         
-
+<p>
+    <a href="Bootstrap%2520Test/Bootstrap%20Test.html">Click here to go to Bootstrap Test!</a>
+    
+    </p>
 </body>
 </html>
