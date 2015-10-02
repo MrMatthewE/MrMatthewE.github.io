@@ -18,11 +18,19 @@
         
         <!-- Logo-->
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>                
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                </button>
             <a href="#" class="navbar-brand">Bootstrap Test</a>
             </div>
         
-             <!-- Menu Items-->
-            <div>
+            
+            
+            
+            <!-- Menu Items-->
+            <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../index.html">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -130,8 +138,19 @@
     </table>
     
 
+    <h1>Wells and Alerts</h1>
+    <h2>Wells are sections with borders and grey backgrounds.</h2>
     
-    
+    <div class="well">Basic Well</div>
+    <div class="well well-sm">small Well</div>
+    <div class="alert alert-success">Congratulations. Success alert.</div>
+    <div 
+         class="alert alert-info"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Info alert
+    </div>
+
+      <div class="alert alert-danger fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Are you sure? Fading
+    </div>
     
     </div>
 
