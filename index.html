@@ -17,38 +17,16 @@ This is a website hosted on Github.<br/>
 
 <font face="Calibri" color="Orange">
 <script>
-
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
+var userName = prompt('What is your name?');
+while(userName==null||userName==false){
+   userName = prompt('What is your name?');
 }
-if( isMobile.any() ){
-  alert('You are on a mobile device');
-}
-
-
-var name = prompt('What is your name?');
-if (name == 'Matthew'){
+if (userName=='Matthew'){
   alert('Why are you entering your own website?');
 }
-alert('Hello ' + name);
+else{
+  alert('Hello ' + userName);
+}
 
 document.write('Welcome to this website ' + name);
 
