@@ -39,7 +39,12 @@ This is a website hosted on Github.<br/>
 </font>
 
 <font face="Calibri" color="Orange">
+    
+    <button onclick="nameFunction()">Click Me</button>
+    
+    
 <script>
+    function nameFunction(){
 var userName = prompt('What is your name?');
 while(userName==null||userName==false){
    userName = prompt('What is your name?');
@@ -51,10 +56,13 @@ else{
   alert('Hello ' + userName);
 }
 
-document.write('Welcome to this website ' + userName);
-
+//document.write('Welcome to this website ' + userName);
+        document.getElementById("welcome").innerHTML = 'Welcome to this website ' + userName;
+    }
+    
 
 </script>
+    <p id="welcome"></p>
 
 </font>
 <br/>
