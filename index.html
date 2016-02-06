@@ -92,7 +92,28 @@ else{
         <img src="Images/Telescope.png" alt="Telescope">
         <br/>
         
-    <font face="Calibri"><p>
+    <button type="button" onclick=toggleText()>Click Me!</button>
+    
+    <script>
+    function toggleText(){
+        var textID = document.getElementById("expandTest");
+            if (textID.style.display=="none"){
+                textID.style.display="block";
+            }
+        else{
+                        textID.style.display="none";
+
+        }
+        
+    }
+    </script>
+    <font face="Calibri">
+    <div id="expandTest">
+    Click the button to contract this text.
+    </div>
+    
+    
+        <p>
     <small>This is small text.</small>
     </p>
     </font>
