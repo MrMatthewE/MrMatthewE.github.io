@@ -25,6 +25,9 @@
     
 This is a website hosted on Github.<br/>
    
+    <kbd>Keyboard Text</kbd>
+    
+    
 </font>
 
     <font face="Calibri" color="#25AFF5" size="48">
@@ -121,5 +124,37 @@ else{
     </p>
     </font>
     
+   
+        <font face="Calibri" Size="72">
+
+    <h2>Font Changer</h2>
+    
+    <div id="colourChange"> The font changes</div>
+    <button type="button" onclick=colourChange()>Click to change font</button>
+            <input id="fontSize" type="range" min="0" max="100" value= "50" onchange="changeSize(this.value)"/>
+    
+            <script>
+                        var getFontId = document.getElementById("colourChange");
+
+    function colourChange(){
+        
+        if(getFontId.style.fontFamily == ""){
+    getFontId.style.fontFamily="jokerman";
+
+       
+        }
+       else if(getFontId.style.fontFamily == "jokerman"){
+    getFontId.style.fontFamily="";}
+    }
+                
+                function changeSize(newValue){
+                    var slider = document.getElementById("fontSize").innerHTML=newValue;
+                   // alert(slider);
+                getFontId.style.fontSize=slider+"px";
+                }
+                
+    </script>
+            
+    </font>
 </body>
 </html>
