@@ -3,15 +3,101 @@
     <head>
             <link rel="stylesheet" href="css/animate.css">
                     <link rel="stylesheet" href="css/Positioning.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 
     </head>
-        <body>
-            <font face="calibri">
-            <h1 style="font-size:72px;text-align:center;color:orange;" class="animated fadeInUp" >Welcome</h1>
+        <body onload="colourChange()">
+            
+            <font face="Calibri">
+            <div id = "head" style="font-family:'Roboto', serif; font-size:100px;text-align:center;color:rgb(255,10,10);" class="animated bounceInUp" >Welcome</div>
                 
-                <div style="width:100px; align:center;" class="centerLeft">
-                <p style="border-radius:5px;border:3px; border-style:solid;border-color:red; border-width:medium; text-align:center;" class="animated fadeInUp" >Test</p>
+                
+           <div style="width:200px;" class="centerLeft" ></a>
+                <p style="border-radius:5px;border:2px; border-style:solid;border-color:#5EAEFF;  text-align:center; color:#5EAEFF" class="animated fadeInUp" ><a style="text-decoration:inherit; color:inherit" href="index.html">Home</a></p>
                 </div>
+             
+                
+                <div style="width:200px;" class="centerLeft" ></a>
+            <p style="border-radius:5px;border:2px; border-style:solid;border-color:#5EAEFF;  text-align:center; color:#5EAEFF;" class="animated fadeInUp" >Item2</p>
+                </div>
+             
+                
+                <script>
+                var title = document.getElementById("head");
+                    var r = 153;
+                    var g = 188;
+                    var b = 47;
+                    
+                    var delay = 100;
+                    //var rgb=153,188,47;
+                   function colourChange(){ 
+                    /*var final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";*/
+                    
+                    while(r > 47){
+                        r--;
+                         //final=r+","+g+","+b;
+                   // alert("rgb(" + final + ")");
+                    //title.style.color="rgb(" + final + ")";
+                                               // setTimeout(sendColour,5000);
+
+                        sendColour();
+                    }
+                    
+                    /*while(b < 188){
+                        //setTimeout(b++,delay);
+                        b++;
+                        final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";
+                    }
+                    while(g > 47){
+                        setTimeout(g--,delay);
+                        var final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";
+                        
+                    }
+                    while(r<188){
+                        setTimeout(r++,delay);
+                         final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";
+                    }
+                    while(b>47){
+                        setTimeout(b--,delay);
+                        final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";
+                    }
+                    r=188;
+                    g=47;
+                    b=47;
+                    while(g<188){
+                        setTimeout(g++,delay);
+                         final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";
+                        
+                    }
+                    while(r>153){
+                        setTimeout(r--,delay);
+                        final=r+","+g+","+b;
+                    //alert("rgb(" + final + ")");
+                    title.style.color="rgb(" + final + ")";
+                        
+                    }*/
+                       function sendColour(){
+                        final=r+","+g+","+b;
+                        console.log("rgb(" + final + ")");
+                       title.style.color="rgb(" + final + ")";
+                           colourChange();
+                       }
+                   }
+                </script>
+                
+                
                 
             </font>
         </body>
