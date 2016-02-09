@@ -1,0 +1,14 @@
+@-webkit-keyframes colourPulse{
+     
+      0%{color: #ceff00;}
+    20%{color: #14c5e5;}
+    40%{color: green;}
+    60%{color: purple;}
+    80%{color: orange;}
+    100%{color: grey;}
+
+}
+
+.colourAnimation{
+-webkit-animation: colourPulse 40s infinite alternate;
+}

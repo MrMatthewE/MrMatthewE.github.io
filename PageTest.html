@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
+    
+    
+    
     <head>
             <link rel="stylesheet" href="css/animate.css">
                     <link rel="stylesheet" href="css/Positioning.css">
+                            <link rel="stylesheet" href="css/colourAnimation.css">
+
+
         <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 
     </head>
-        <body onload="colourChange()">
+        <body onload="colourChange()"  >
             
             <font face="Calibri">
-            <div id = "head" style="font-family:'Roboto', serif; font-size:100px;text-align:center;color:rgb(255,10,10);" class="animated bounceInUp" >Welcome</div>
+                <div class="animated bounceInUp">
+            <div id = "head" style="font-family:'Roboto', serif; font-size:100px;text-align:center;color:rgb(25, 212, 133);" class="colourAnimation">Welcome</div></div>
                 
                 
            <div style="width:200px;" class="centerLeft" ></a>
@@ -20,82 +27,11 @@
                 <div style="width:200px;" class="centerLeft" ></a>
             <p style="border-radius:5px;border:2px; border-style:solid;border-color:#5EAEFF;  text-align:center; color:#5EAEFF;" class="animated fadeInUp" >Item2</p>
                 </div>
+    
+    <div style="width:200px;" class="centerLeft" ></a>
+            <p style="border-radius:5px;border:2px; border-style:solid;border-color:#5EAEFF;  text-align:center; color:#5EAEFF;" class="animated fadeInUp" >Color Change</p>
+                </div>
              
-                
-                <script>
-                var title = document.getElementById("head");
-                    var r = 153;
-                    var g = 188;
-                    var b = 47;
-                    
-                    var delay = 100;
-                    //var rgb=153,188,47;
-                   function colourChange(){ 
-                    /*var final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";*/
-                    
-                    while(r > 47){
-                        r--;
-                         //final=r+","+g+","+b;
-                   // alert("rgb(" + final + ")");
-                    //title.style.color="rgb(" + final + ")";
-                                               // setTimeout(sendColour,5000);
-
-                        sendColour();
-                    }
-                    
-                    /*while(b < 188){
-                        //setTimeout(b++,delay);
-                        b++;
-                        final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";
-                    }
-                    while(g > 47){
-                        setTimeout(g--,delay);
-                        var final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";
-                        
-                    }
-                    while(r<188){
-                        setTimeout(r++,delay);
-                         final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";
-                    }
-                    while(b>47){
-                        setTimeout(b--,delay);
-                        final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";
-                    }
-                    r=188;
-                    g=47;
-                    b=47;
-                    while(g<188){
-                        setTimeout(g++,delay);
-                         final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";
-                        
-                    }
-                    while(r>153){
-                        setTimeout(r--,delay);
-                        final=r+","+g+","+b;
-                    //alert("rgb(" + final + ")");
-                    title.style.color="rgb(" + final + ")";
-                        
-                    }*/
-                       function sendColour(){
-                        final=r+","+g+","+b;
-                        console.log("rgb(" + final + ")");
-                       title.style.color="rgb(" + final + ")";
-                           colourChange();
-                       }
-                   }
-                </script>
                 
                 
                 
