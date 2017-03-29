@@ -1,0 +1,135 @@
+ul{
+    background-color: #333;
+     overflow: hidden;
+    padding: 10px
+}
+
+ul li{
+list-style-type: none;
+    display: inline;
+    float: left;
+     
+}
+
+ul li a{
+    padding: 14 16;
+text-decoration: none;
+    overflow: hidden;
+    color:white;
+    
+}
+
+ul li a:hover{
+    background-color: dodgerblue;
+}
+
+
+body{
+    font-family: calibri;
+}
+
+ul #searchBar{
+    float:right;
+}
+
+ul #searchBar input[type=text]{
+  border-radius: 10px;
+    width:200px;
+-webkit-transition: all .5s ease;
+
+   
+    
+}
+ul #searchBar input[type=text]:focus{
+width: 500px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ul{
+    background-color: coral;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul li{
+   
+    float left;
+}
+
+ul li a{
+    display: inline-block;
+    text-align: center;
+    background-color: #85c71f;
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 16px 16px;
+}
+
+ul li a:hover{
+    background-color: #c71f93;
+}
+*/
