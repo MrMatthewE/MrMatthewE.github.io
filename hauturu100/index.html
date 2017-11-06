@@ -7,12 +7,15 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+         
+        
         
         <link rel="stylesheet" href="CSS/styles.css">
         <link rel="stylesheet" href="CSS/animate.css">
     </head>
     
-    <body>
+    <body>         
+        
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
              <!--Logo-->
             <a href="#" class="navbar-brand">Hauturu School Centenary</a>
@@ -89,7 +92,7 @@
                                 <p class="mb-0">$idk per ticket</p>
                             </blockquote>
                             <!-- Form-->
-                            <form>
+                            <form id="registerForm">
                                 <div class="form-group">
                                     <label for="fName">First Name</label>
                                     <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="First Name">
@@ -108,6 +111,46 @@
                                     <input type="text" class="form-control" id="phone" aria-describedby="phNumberHelp" placeholder="Contact phone Number">
                                     
                                 </div>
+                                
+                                <div class="form-group">
+                                    <label for="yearBegan">Year began</label>                                   
+                                    <select id="yearBegan" name="yearBegan" form="registerForm">
+                                        <script>
+                                            var min = 1900,
+                                            max = 2020,
+                                            select = document.getElementById('yearBegan');
+
+                                        for (var i = min; i<=max; i++){
+                                            var opt = document.createElement('option');
+                                            opt.value = i;
+                                            opt.innerHTML = i;
+                                            select.appendChild(opt);
+                                        }
+                                        </script>
+                                    </select>
+                                    <label for="yearFinished">Year Finished</label>                                   
+                                    <select id="yearFinished" name="yearFinished" form="registerForm">
+                                        <script>
+                                            var min = 1900,
+                                            max = 2020,
+                                            select = document.getElementById('yearFinished');
+
+                                        for (var i = min; i<=max; i++){
+                                            var opt = document.createElement('option');
+                                            opt.value = i;
+                                            opt.innerHTML = i;
+                                            select.appendChild(opt);
+                                        }
+                                        </script>
+                                    </select>
+                                </div>
+                                
+                                <script>
+                                    function fillSelects(selectID){
+                                        
+                                    }
+                                
+                                </script>
                                 <div class="form-check">
                                 <label class="form-check-label">
                                   <input type="radio" name="nameDisplay" class="form-check-input" checked value="option1">
