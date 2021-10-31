@@ -1,5 +1,10 @@
 
-h1 {
+.titlea {
 font-family: 'Zen Antique', serif;
-font-size: 100%;
+width:100%;
+text-align: center
+}
+
+.fullwidth{
+width:100%;
 }
