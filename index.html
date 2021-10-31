@@ -1,163 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/animate.css">
-    </head>
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
 <title>
     Github Webpage Title
     </title>
-    
+
 <body>
-    
 
-   
-    
-    
-<font face="Calibri" color="Green">
-    <div class="animated zoomInUp">
-        <h1>Website by MrMatthewE</h1>
-        </div>
-        
-<br/>
-    <a href="404.html">Check Out a 404 error!</a>
-    <br/>
-    
-This is a website hosted on Github.<br/>
-   
-    <kbd>Keyboard Text</kbd>
-    
-    
-</font>
 
-    <font face="Calibri" color="#25AFF5" size="48">
-    
-    <p>
-    <a href="Bootstrap%20Test/Bootstrap%20Test.html" style="color: #25AFF5">Click here to go to Bootstrap Test!</a>
-        </br>
-        <a href="PageTest.html" style="color: #25AFF5">Click here to go to the test page</a>
-    
-    </p>
-    </font>
-    
-    
-<font face="Calibri" color="2D81FF">
-Calibri
-</font>
 
-<font face="Calibri" color="Orange">
-    
-    <button onclick="nameFunction()">Click Me</button>
-    
-    
-<script>
-    
-    // window.location =  "http://mrmatthewe.github.io/Bootstrap%20Test/Bootstrap%20Test.html"  ;//redirect to bootstrap
-        
-    
-    
-    
-    
-    function nameFunction(){
-var userName = prompt('What is your name?');
-while(userName==null||userName==false){
-   userName = prompt('What is your name?');
-}
-if (userName=='Matthew'){
-  alert('Why are you entering your own website?');
-}
-else{
-  alert('Hello ' + userName);
-}
 
-//document.write('Welcome to this website ' + userName);
-        document.getElementById("welcome").innerHTML = 'Welcome to this website ' + userName;
-    }
-    
 
-</script>
-    <p id="welcome"></p>
+  <h1 class="animate__animated animate__backInDown" style="text-align: center">An animated element</h1>
 
-</font>
-<br/>
-    <font  face="Calibri" color="26B7FF">
-    JS-Colour Demo
-    <br/>
-    <script type="text/javascript" src="JS-Colour/jscolor.js"></script>
-        
-    Choose Colour: <input class="color" onchange=document.getElementsByTagName('body')[0].style.backgroundcolor = '#'+this.color>
-                         
-    </font>
-        <br/>
-        
-        <div id="Hello">
-    Hello
-    
-    </div>
-        <br/>
-        The above colour picker is called JS-Color.
-        <br/>
-        <img src="Images/Telescope.png" alt="Telescope">
-        <br/>
-        
-    <button type="button" onclick=toggleText()>Click Me!</button>
-    
-    <script>
-    function toggleText(){
-        var textID = document.getElementById("expandTest");
-            if (textID.style.display=="none"){
-                textID.style.display="block";
-            }
-        else{
-                        textID.style.display="none";
 
-        }
-        
-    }
-    </script>
-    <font face="Calibri">
-    <div id="expandTest">
-    Click the button to contract this text.
-    </div>
-    
-    
-        <p>
-    <small>This is small text.</small>
-    </p>
-    </font>
-    
-   
-        <font face="Calibri" Size="72">
 
-    <h2 title="Simple font changer.">Font Changer</h2>
-    
-    <div id="colourChange"> The font changes</div>
-    <button type="button" onclick=colourChange()>Click to change font</button>
-            <input id="fontSize" type="range" min="0" max="100" value= "50" onchange="changeSize(this.value)"/>
-    <div id="size">50px</div>
-            <script>
-                        var getFontId = document.getElementById("colourChange");
-
-    function colourChange(){
-        
-        if(getFontId.style.fontFamily == ""){
-    getFontId.style.fontFamily="jokerman";
-
-       
-        }
-       else if(getFontId.style.fontFamily == "jokerman"){
-    getFontId.style.fontFamily="";}
-    }
-                
-                function changeSize(newValue){
-                    var slider = document.getElementById("fontSize").innerHTML=newValue;
-                   // alert(slider);
-                getFontId.style.fontSize=slider+"px";
-                    document.getElementById("size").innerHTML = slider+"px";
-                }
-                
-    </script>
-            
-    </font>
 </body>
 </html>
